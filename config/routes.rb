@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "photos#index"
+  scope '/gallery' do
+    root "photos#index"
+  end
 end
